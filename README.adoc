@@ -1,4 +1,4 @@
-= Venmo API graph data import
+= World city data
 
 _NOTE: Due to the size of the data file, you will need `git-lfs` installed to clone this repository. You can install the tool via homebrew and other package managers, or you can download the library. For more details, see Github's https://git-lfs.github.com/[page^] for information on git-lfs._
 
@@ -6,4 +6,4 @@ The data is borrowed from my colleague's https://github.com/moxious/meetup-datas
 
 == Data Model
 
-image:{img}/world_cities_data_model.png[]
+image:img/world_cities_data_model.png[]
