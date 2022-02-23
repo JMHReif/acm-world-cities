@@ -24,12 +24,12 @@ ORDER BY count DESC
 LIMIT 20;
 
 //Find neighboring countries
-MATCH (c:Country)-[r:NEIGHBOR]->(oc:Country)
+MATCH (c:Country)-[r:NEIGHBORS]->(oc:Country)
 RETURN c, r, oc;
 
 //Find groups of neighboring countries
-MATCH (c:Country)-[r:NEIGHBOR]->(oc:Country)
-WHERE size((c)-[:NEIGHBOR]-(:Country)) > 1
+MATCH (c:Country)-[r:NEIGHBORS]->(oc:Country)
+WHERE size((c)-[:NEIGHBORS]-(:Country)) > 1
 RETURN c, r, oc;
 
 //Find 2 cities close together
